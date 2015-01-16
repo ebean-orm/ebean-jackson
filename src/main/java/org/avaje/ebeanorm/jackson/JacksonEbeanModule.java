@@ -31,6 +31,9 @@ public class JacksonEbeanModule extends SimpleModule {
     return "jackson-datatype-ebean";
   }
 
+  /**
+   * Register the Ebean specific serialisers and deserialisers.
+   */
   @Override
   public void setupModule(SetupContext context) {
     JsonContext jc = (jsonContext != null) ? jsonContext : Ebean.json();

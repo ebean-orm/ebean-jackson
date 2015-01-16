@@ -11,7 +11,7 @@ import java.io.StringWriter;
 
 import static org.junit.Assert.*;
 
-public class BeanJsonSerialiserTest extends AgentLoader {
+public class BeanJsonSerializerTest extends AgentLoader {
 
   @Test
   public void testSerialize() throws Exception {
@@ -19,7 +19,7 @@ public class BeanJsonSerialiserTest extends AgentLoader {
 
     JsonContext jsonContext = Ebean.json();
 
-    CommonBeanSerializer jsonSerialiser = new CommonBeanSerializer(jsonContext);
+    BeanJsonSerializer jsonSerialiser = new BeanJsonSerializer(jsonContext);
 
     Customer customer = new Customer();
     customer.setId(42L);
