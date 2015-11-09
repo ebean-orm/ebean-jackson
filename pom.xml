@@ -60,7 +60,7 @@
     <dependency>
       <groupId>org.avaje.ebeanorm</groupId>
       <artifactId>avaje-ebeanorm</artifactId>
-      <version>[4.5.3,)</version>
+      <version>[6.10.4,7)</version>
       <scope>provided</scope>
     </dependency>
 
