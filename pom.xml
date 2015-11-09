@@ -10,7 +10,7 @@
 
   <groupId>org.avaje.ebeanorm</groupId>
   <artifactId>avaje-ebeanorm-jackson</artifactId>
-  <version>6.10.1-SNAPSHOT</version>
+  <version>6.10.1</version>
   <packaging>jar</packaging>
 
   <name>avaje-ebeanorm-jackson</name>
