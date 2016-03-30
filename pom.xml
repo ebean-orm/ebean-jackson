@@ -10,7 +10,7 @@
 
   <groupId>org.avaje.ebeanorm</groupId>
   <artifactId>avaje-ebeanorm-jackson</artifactId>
-  <version>6.11.1-SNAPSHOT</version>
+  <version>6.11.1</version>
   <packaging>jar</packaging>
 
   <name>avaje-ebeanorm-jackson</name>
@@ -23,6 +23,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/ebean-orm/avaje-ebeanorm-jackson.git</developerConnection>
+    <tag>avaje-ebeanorm-jackson-6.11.1</tag>
   </scm>
 
   <dependencies>
