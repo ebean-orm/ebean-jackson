@@ -5,11 +5,11 @@ import com.avaje.ebean.text.json.JsonContext;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import org.example.domain.Customer;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.io.StringWriter;
 
-import static org.junit.Assert.*;
+import static org.testng.Assert.assertTrue;
 
 public class BeanJsonSerializerTest extends AgentLoader {
 

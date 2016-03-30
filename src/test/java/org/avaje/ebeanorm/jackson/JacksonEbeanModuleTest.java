@@ -7,15 +7,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.domain.AWrapperBean;
 import org.example.domain.AWrapperBeanList;
 import org.example.domain.Customer;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class JacksonEbeanModuleTest extends AgentLoader {
 
