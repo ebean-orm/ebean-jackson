@@ -8,12 +8,12 @@
     <version>1.1</version>
   </parent>
 
-  <groupId>org.avaje.ebeanorm</groupId>
-  <artifactId>avaje-ebeanorm-jackson</artifactId>
-  <version>6.12.2-SNAPSHOT</version>
+  <groupId>org.avaje.ebean</groupId>
+  <artifactId>ebean-jackson</artifactId>
+  <version>8.1.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>avaje-ebeanorm-jackson</name>
+  <name>ebean-jackson</name>
   <url>https://github.com/ebean-orm/avaje-ebeanorm-jackson</url>
 
   <properties>
@@ -43,9 +43,9 @@
     </dependency>
 
     <dependency>
-      <groupId>org.avaje.ebeanorm</groupId>
-      <artifactId>avaje-ebeanorm</artifactId>
-      <version>[6.10.4,8)</version>
+      <groupId>org.avaje.ebean</groupId>
+      <artifactId>ebean</artifactId>
+      <version>8.1.1</version>
       <scope>provided</scope>
     </dependency>
 
@@ -59,9 +59,9 @@
     </dependency>
 
     <dependency>
-      <groupId>org.avaje.ebeanorm</groupId>
-      <artifactId>avaje-ebeanorm-agent</artifactId>
-      <version>4.5.1</version>
+      <groupId>org.avaje.ebean</groupId>
+      <artifactId>ebean-agent</artifactId>
+      <version>8.1.1</version>
       <scope>test</scope>
     </dependency>
 
@@ -87,7 +87,7 @@
         <configuration>
           <tiles>
             <tile>org.avaje.tile:java-compile:1.1</tile>
-            <tile>org.avaje.tile:test-ebean-enhancement:1.1</tile>
+            <tile>org.avaje.tile:ebean-enhancement:8.1</tile>
           </tiles>
         </configuration>
       </plugin>
