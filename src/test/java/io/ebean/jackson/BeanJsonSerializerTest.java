@@ -1,7 +1,7 @@
-package org.avaje.ebeanorm.jackson;
+package io.ebean.jackson;
 
-import com.avaje.ebean.Ebean;
-import com.avaje.ebean.text.json.JsonContext;
+import io.ebean.Ebean;
+import io.ebean.text.json.JsonContext;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import org.example.domain.Customer;
@@ -11,7 +11,7 @@ import java.io.StringWriter;
 
 import static org.testng.Assert.assertTrue;
 
-public class BeanJsonSerializerTest extends AgentLoader {
+public class BeanJsonSerializerTest {
 
   @Test
   public void testSerialize() throws Exception {

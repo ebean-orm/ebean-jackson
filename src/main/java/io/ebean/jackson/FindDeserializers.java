@@ -1,6 +1,6 @@
-package org.avaje.ebeanorm.jackson;
+package io.ebean.jackson;
 
-import com.avaje.ebean.text.json.JsonContext;
+import io.ebean.text.json.JsonContext;
 import com.fasterxml.jackson.databind.BeanDescription;
 import com.fasterxml.jackson.databind.DeserializationConfig;
 import com.fasterxml.jackson.databind.JavaType;

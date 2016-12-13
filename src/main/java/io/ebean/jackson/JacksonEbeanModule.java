@@ -1,7 +1,7 @@
-package org.avaje.ebeanorm.jackson;
+package io.ebean.jackson;
 
-import com.avaje.ebean.Ebean;
-import com.avaje.ebean.text.json.JsonContext;
+import io.ebean.Ebean;
+import io.ebean.text.json.JsonContext;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 
 /**

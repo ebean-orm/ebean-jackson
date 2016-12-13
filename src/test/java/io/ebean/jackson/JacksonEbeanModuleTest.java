@@ -1,7 +1,7 @@
-package org.avaje.ebeanorm.jackson;
+package io.ebean.jackson;
 
-import com.avaje.ebean.Ebean;
-import com.avaje.ebean.text.json.JsonContext;
+import io.ebean.Ebean;
+import io.ebean.text.json.JsonContext;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.domain.AWrapperBean;
@@ -14,10 +14,10 @@ import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
-public class DelayEbeanModuleTest {
-
+public class JacksonEbeanModuleTest {
 
   @Test
   public void test() throws IOException {
@@ -25,7 +25,7 @@ public class DelayEbeanModuleTest {
     ObjectMapper mapper = new ObjectMapper();
     JsonContext jsonContext = Ebean.json();
 
-    mapper.registerModule(new DelayEbeanModule());
+    mapper.registerModule(new JacksonEbeanModule(jsonContext));
 
     Customer customer = createCustomer();
 
@@ -83,7 +83,8 @@ public class DelayEbeanModuleTest {
     wrapperBean.customer = createCustomer();
 
     ObjectMapper mapper = new ObjectMapper();
-    mapper.registerModule(new DelayEbeanModule());
+    JsonContext jsonContext = Ebean.json();
+    mapper.registerModule(new JacksonEbeanModule(jsonContext));
 
     StringWriter writer = new StringWriter();
     JsonGenerator generator = mapper.getFactory().createGenerator(writer);
@@ -120,7 +121,8 @@ public class DelayEbeanModuleTest {
     customers.add(createCustomer(2L, "two"));
 
     ObjectMapper mapper = new ObjectMapper();
-    mapper.registerModule(new DelayEbeanModule());
+    JsonContext jsonContext = Ebean.json();
+    mapper.registerModule(new JacksonEbeanModule(jsonContext));
 
     StringWriter writer = new StringWriter();
     JsonGenerator generator = mapper.getFactory().createGenerator(writer);

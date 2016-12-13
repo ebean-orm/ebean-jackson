@@ -1,7 +1,7 @@
-package org.avaje.ebeanorm.jackson;
+package io.ebean.jackson;
 
-import com.avaje.ebean.Ebean;
-import com.avaje.ebean.bean.BeanCollection;
+import io.ebean.Ebean;
+import io.ebean.bean.BeanCollection;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.BeanDescription;
 import com.fasterxml.jackson.databind.DeserializationConfig;
